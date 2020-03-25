@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 import { HighlightModule } from 'ngx-highlightjs';
 import json from 'highlight.js/lib/languages/json';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -14,7 +14,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { HomeContentComponent } from './components/home-content/home-content.component';
 import { LoadingComponent } from './components/loading/loading.component';
-
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCartArrowDown, faUserTag, faCar } from '@fortawesome/free-solid-svg-icons';
+import { SellComponent } from './pages/sell/sell.component';
+import { BuyComponent } from './pages/buy/buy.component';
+import { AboutComponent } from './pages/about/about.component';
 export function hljsLanguages() {
   return [{ name: 'json', func: json }];
 }
@@ -28,7 +32,10 @@ export function hljsLanguages() {
     FooterComponent,
     HeroComponent,
     HomeContentComponent,
-    LoadingComponent
+    LoadingComponent,
+    SellComponent,
+    BuyComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -37,9 +44,17 @@ export function hljsLanguages() {
     HighlightModule.forRoot({
       languages: hljsLanguages
     }),
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgbPaginationModule,
+    NgbAlertModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+    library.add(
+      faCartArrowDown, faUserTag, faCar
+    );
+  }
+}
