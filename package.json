@@ -1,0 +1,48 @@
+{
+  "name": "nextroll",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run serve",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcardenas0917/mynextroll.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcardenas0917/mynextroll/issues"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "eslint": "^6.6.0",
+    "nodemon": "^1.19.4"
+  },
+  "homepage": "https://github.com/jcardenas0917/mynextroll#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcrypt": "^3.0.6",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "if-env": "^1.0.4",
+    "moment": "^2.24.0",
+    "momentjs": "^2.0.0",
+    "mongoose": "^5.7.6",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "request": "^2.88.0",
+    "vuex": "^3.1.3"
+  },
+  "description": ""
+}
