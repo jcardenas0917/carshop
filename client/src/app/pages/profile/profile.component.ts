@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/auth/auth.service';
+import { ProfileService } from 'src/app/services/profile.service';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-profile',
@@ -7,14 +9,15 @@ import { AuthService } from 'src/app/auth/auth.service';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  profileJson: string = null;
+  userForm: FormGroup;
+  email: string;
+  profile: any;
+  constructor(private user: ProfileService) {
 
-  constructor(public auth: AuthService) { }
-
-  ngOnInit() {
-    this.auth.userProfile$.subscribe(
-      profile => this.profileJson = JSON.stringify(profile, null, 2)
-    );
   }
 
+  ngOnInit() {
+    this.profile = this.user.getUser();
+    console.log(this.profile.email);
+  }
 }

@@ -19,6 +19,7 @@ import { faCartArrowDown, faUserTag, faCar } from '@fortawesome/free-solid-svg-i
 import { SellComponent } from './pages/sell/sell.component';
 import { BuyComponent } from './pages/buy/buy.component';
 import { AboutComponent } from './pages/about/about.component';
+import { HttpClientModule } from '@angular/common/http';
 export function hljsLanguages() {
   return [{ name: 'json', func: json }];
 }
@@ -46,7 +47,8 @@ export function hljsLanguages() {
     }),
     FontAwesomeModule,
     NgbPaginationModule,
-    NgbAlertModule
+    NgbAlertModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

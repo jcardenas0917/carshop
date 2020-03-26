@@ -2,7 +2,7 @@
 const router = require("express").Router();
 const userController = require("../../controller/userController");
 
-// Matches with "/api/journal/
+// Matches with "/api/car/
 
 router.route("/user/:user")
     .get(userController.findOneJournal)
@@ -10,7 +10,7 @@ router.route("/user/:user")
 
 router.route("/")
     .get(userController.findAllJournals)
-    .post(userController.createJournal)
+    .post(userController.createCar)
 
 router.route("/id/:id")
     .delete(userController.removeJournal)
