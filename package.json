@@ -1,12 +1,12 @@
 {
-  "name": "nextroll",
+  "name": "carshop",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client && npm run serve",
+    "client": "cd client && ng serve --port 3000",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"

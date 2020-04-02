@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <ProjectGuid>D1042777-4A65-4FBE-A421-B058921691AE</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="IkeMtz.NRSRx.Core.Unigration" Version="1.20.71.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CarShop.OData\CarShop.OData.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Unigration\OData\" />
+  </ItemGroup>
+</Project>

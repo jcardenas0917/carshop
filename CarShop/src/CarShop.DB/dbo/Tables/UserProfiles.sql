@@ -1,0 +1,10 @@
+CREATE TABLE [dbo].[UserProfiles](
+  [Id] UNIQUEIDENTIFIER NOT NULL,
+  [Email] NVARCHAR(250) NOT NULL,
+  [FullName] NVARCHAR(250) NOT NULL,
+  [Address] NVARCHAR(250) NOT NULL,
+    [City] NVARCHAR(50) NOT NULL, 
+    [State] NVARCHAR(50) NOT NULL, 
+    [Sub] NVARCHAR(50) NOT NULL, 
+    CONSTRAINT [PK_UserProfiles] PRIMARY KEY ([Id]),
+)

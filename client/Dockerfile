@@ -22,7 +22,7 @@ RUN mkdir -p /app
 
 WORKDIR /app
 
-COPY --from=build ./app/dist/login-demo .
+COPY --from=build ./app/dist/carshop .
 
 RUN npm install -g live-server
 

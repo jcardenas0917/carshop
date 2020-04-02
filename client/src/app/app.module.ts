@@ -20,6 +20,9 @@ import { SellComponent } from './pages/sell/sell.component';
 import { BuyComponent } from './pages/buy/buy.component';
 import { AboutComponent } from './pages/about/about.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CreateProfileComponent } from './pages/create-profile/create-profile.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 export function hljsLanguages() {
   return [{ name: 'json', func: json }];
 }
@@ -36,7 +39,8 @@ export function hljsLanguages() {
     LoadingComponent,
     SellComponent,
     BuyComponent,
-    AboutComponent
+    AboutComponent,
+    CreateProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,6 +53,8 @@ export function hljsLanguages() {
     NgbPaginationModule,
     NgbAlertModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

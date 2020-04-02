@@ -7,7 +7,6 @@ import { endPoints } from 'src/environments/endPoints';
 })
 export class SellService {
 
-  private url = endPoints.sell.sellApi;
   constructor(private http: HttpClient) { }
 
   postCar() {

@@ -1,0 +1,8 @@
+C:\Users\Jaime Cardenas\Desktop\projects\carshop\CarShop\src\CarShop.Abstraction\bin\Debug\netstandard1.6\CarShop.Abstraction.deps.json
+C:\Users\Jaime Cardenas\Desktop\projects\carshop\CarShop\src\CarShop.Abstraction\bin\Debug\netstandard1.6\CarShop.Abstraction.dll
+C:\Users\Jaime Cardenas\Desktop\projects\carshop\CarShop\src\CarShop.Abstraction\bin\Debug\netstandard1.6\CarShop.Abstraction.pdb
+C:\Users\Jaime Cardenas\Desktop\projects\carshop\CarShop\src\CarShop.Abstraction\obj\Debug\netstandard1.6\CarShop.Abstraction.csprojAssemblyReference.cache
+C:\Users\Jaime Cardenas\Desktop\projects\carshop\CarShop\src\CarShop.Abstraction\obj\Debug\netstandard1.6\CarShop.Abstraction.AssemblyInfoInputs.cache
+C:\Users\Jaime Cardenas\Desktop\projects\carshop\CarShop\src\CarShop.Abstraction\obj\Debug\netstandard1.6\CarShop.Abstraction.AssemblyInfo.cs
+C:\Users\Jaime Cardenas\Desktop\projects\carshop\CarShop\src\CarShop.Abstraction\obj\Debug\netstandard1.6\CarShop.Abstraction.dll
+C:\Users\Jaime Cardenas\Desktop\projects\carshop\CarShop\src\CarShop.Abstraction\obj\Debug\netstandard1.6\CarShop.Abstraction.pdb
