@@ -6,12 +6,13 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { SellComponent } from './pages/sell/sell.component';
 import { BuyComponent } from './pages/buy/buy.component';
 import { AboutComponent } from './pages/about/about.component';
+import { CreateProfileComponent } from './pages/create-profile/create-profile.component';
 
 const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent,
-    canActivate: [AuthGuard]
+    //canActivate: [AuthGuard]
   },
   {
     path: 'sell',
@@ -26,6 +27,11 @@ const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'create',
+    component: CreateProfileComponent,
     canActivate: [AuthGuard]
   },
   {

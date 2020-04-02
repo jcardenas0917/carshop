@@ -26,7 +26,7 @@ app.use((_, res) => {
 
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/nextroll", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/carshop", { useNewUrlParser: true });
 
 // Start the API server
 app.listen(PORT, function () {

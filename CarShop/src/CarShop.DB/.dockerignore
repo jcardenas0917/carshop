@@ -1,0 +1,5 @@
+*.dbmdl
+*.jfm
+dbo/**
+obj/**
+Properties/**

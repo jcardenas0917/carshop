@@ -1,3 +1,4 @@
+import { FormControl, FormGroup } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sell.component.css']
 })
 export class SellComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  public todos = [];
+  todoForm: FormGroup;
+  constructor() {
+    this.todoForm = new FormGroup({
+      add: new FormControl('')
+    }
+    );
   }
 
+  ngOnInit() {
+
+  }
+  addItems() {
+    this.todos.push(this.todoForm.value);
+    this.todoForm.patchValue({ add: '' });
+  }
+  markComplete(todo) {
+    this.todos.forEach((item, i) => {
+      if (item.add === todo) {
+        this.todos.splice(i, 1);
+      }
+    });
+  }
 }

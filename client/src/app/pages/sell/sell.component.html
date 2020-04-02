@@ -1,1 +1,16 @@
-<p>sell works!</p>
+<form [formGroup]="todoForm" (ngSubmit)="addItems()">
+  <label for="todolist">
+    To do List:
+    <input type="text" formControlName="add">
+  </label>
+  <input type="submit" value="Add To Do" class="add">
+</form>
+<div>
+  <ul>
+    <li *ngFor="let todo of todos">
+      {{todo.add}}
+      <button value="completed" (click)=markComplete(todo.add)>√</button>
+    </li>
+  </ul>
+  <div *ngIf="todos.length < 1">This list is empty</div>
+</div>

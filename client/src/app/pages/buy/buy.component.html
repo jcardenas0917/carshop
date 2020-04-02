@@ -1,1 +1,16 @@
-<p>buy works!</p>
+<ul>
+  <li *ngFor="let name of names; index as i">
+    <h2 (click)="onClick(name)">{{i}} {{name}}</h2>
+  </li>
+  <div *ngIf="completed">
+    <p>Completed</p>
+  </div>
+</ul>
+
+<div>
+  <ul>
+    <li *ngFor="let fullName of fullNames">
+      <p>{{fullName.name}} {{fullName.last}}</p>
+    </li>
+  </ul>
+</div>

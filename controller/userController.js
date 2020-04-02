@@ -46,8 +46,8 @@ module.exports = {
             .catch(err => res.status(422).json(err));
     },
 
-    createJournal: function (req, res) {
-        db.Journal
+    createCar: function (req, res) {
+        db.Car
             .create(req.body)
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
