@@ -1,0 +1,28 @@
+<h1>Create a Profile</h1>
+<form novalidate [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <label for="fullname">
+    Email:
+    <input readonly type="text" formControlName="email">
+  </label>
+  <label for="fullname">
+    Full Name:
+    <input type="text" formControlName="fullName">
+    <div *ngIf="submitted && userForm.controls.fullName.invalid" class="alert alert-danger">Full Name is required</div>
+  </label>
+  <label for="address">
+    Address:
+    <input type="text" formControlName="address">
+    <div *ngIf="submitted && userForm.controls.address.invalid" class="alert alert-danger">Address is required</div>
+  </label>
+  <label for="city">
+    City:
+    <input type="text" formControlName="city">
+    <div *ngIf="submitted && userForm.controls.city.invalid" class="alert alert-danger">City is required</div>
+  </label>
+  <label for="state">
+    State:
+    <input type="text" formControlName="state">
+    <div *ngIf="submitted && userForm.controls.state.invalid" class="alert alert-danger">State is required</div>
+  </label>
+  <input type="submit" value="Edit Profile" class="cta">
+</form>

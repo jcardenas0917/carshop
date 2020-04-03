@@ -23,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CreateProfileComponent } from './pages/create-profile/create-profile.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { EditProfileComponent } from './pages/create-profile/edit-profile.component';
 export function hljsLanguages() {
   return [{ name: 'json', func: json }];
 }
@@ -41,6 +42,7 @@ export function hljsLanguages() {
     BuyComponent,
     AboutComponent,
     CreateProfileComponent,
+    EditProfileComponent
   ],
   imports: [
     BrowserModule,
