@@ -7,12 +7,13 @@ import { SellComponent } from './pages/sell/sell.component';
 import { BuyComponent } from './pages/buy/buy.component';
 import { AboutComponent } from './pages/about/about.component';
 import { CreateProfileComponent } from './pages/create-profile/create-profile.component';
+import { EditProfileComponent } from './pages/create-profile/edit-profile.component';
 
 const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent,
-    //canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   },
   {
     path: 'sell',
@@ -32,6 +33,11 @@ const routes: Routes = [
   {
     path: 'create',
     component: CreateProfileComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'edit',
+    component: EditProfileComponent,
     canActivate: [AuthGuard]
   },
   {

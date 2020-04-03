@@ -12,9 +12,16 @@
           <li class="nav-item">
             <a routerLink="/" class="nav-link">Home</a>
           </li>
-          <li class="nav-item">
-            <a routerLink="/create" class="nav-link">Create Profile</a>
-          </li>
+          <div *ngIf="userExist$ | async; else elseBlock">
+            <li class="nav-item">
+              <a routerLink="/edit" class="nav-link">Edit Profile</a>
+            </li>
+          </div>
+          <ng-template #elseBlock>
+            <li class="nav-item">
+              <a routerLink="/create" class="nav-link">Create Profile</a>
+            </li>
+          </ng-template>
           <li class="nav-item">
             <a routerLink="/profile" class="nav-link">Profile</a>
           </li>
