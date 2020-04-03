@@ -4,7 +4,3 @@ C:\Users\Jaime Cardenas\Desktop\projects\carshop\CarShop\src\CarShop.DB\bin\Debu
 C:\Users\Jaime Cardenas\Desktop\projects\carshop\CarShop\src\CarShop.DB\obj\Debug\CarShop.DB.sqlprojAssemblyReference.cache
 C:\Users\Jaime Cardenas\Desktop\projects\carshop\CarShop\src\CarShop.DB\obj\Debug\CarShop.DB.dll
 C:\Users\Jaime Cardenas\Desktop\projects\carshop\CarShop\src\CarShop.DB\obj\Debug\CarShop.DB.pdb
-C:\Users\Jaime Cardenas\Desktop\projects\carshop\CarShop\src\CarShop.DB\obj\Debug\Model.xml
-C:\Users\Jaime Cardenas\Desktop\projects\carshop\CarShop\src\CarShop.DB\obj\Debug\refactor.xml
-C:\Users\Jaime Cardenas\Desktop\projects\carshop\CarShop\src\CarShop.DB\obj\Debug\postdeploy.sql
-C:\Users\Jaime Cardenas\Desktop\projects\carshop\CarShop\src\CarShop.DB\obj\Debug\predeploy.sql
