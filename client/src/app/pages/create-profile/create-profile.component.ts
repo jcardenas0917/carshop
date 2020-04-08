@@ -31,7 +31,7 @@ export class CreateProfileComponent implements OnInit {
     if (this.userForm.valid) {
       this.user.postUser(this.userForm.value).subscribe();
       this.userForm.reset();
-      this.router.navigate(['']);
+      this.router.navigate(['/profile']);
       alert('Submitted!');
     }
   }

@@ -43,7 +43,7 @@ export class EditProfileComponent implements OnInit {
   onSubmit() {
     this.user.updateUser(this.userForm.value).subscribe();
     this.userForm.reset();
-    this.router.navigate(['']);
+    this.router.navigate(['/profile']);
     alert('Submitted!');
   }
   ngOnInit() {

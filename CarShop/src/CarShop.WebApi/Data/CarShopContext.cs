@@ -12,5 +12,6 @@ namespace CarShop.WebApi.Data
     { }
 
     public virtual DbSet<UserProfile> UserProfiles { get; set; }
-  }
+        public virtual DbSet<SellCar> SellCars { get; set; }
+    }
 }

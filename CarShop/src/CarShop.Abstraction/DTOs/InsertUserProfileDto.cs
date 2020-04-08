@@ -8,13 +8,10 @@ namespace CarShop.Abstraction.DTOs
   {
     public Guid? Id { get; set; }
     [Required]
-    public string Email { get; set; }
-    public string FullName { get; set; }
-    public string Address { get; set; }
+    public string Make { get; set; }
+    public string Model { get; set; }
+    public string Year { get; set; }
 
-    public string City { get; set; }
-    public string State { get; set; }
-        public string Sub { get; set; }
         public UserProfile ToUserProfile()
     {
       var result = SimpleMapper<InsertUserProfileDto, UserProfile>.Instance.Convert(this);
