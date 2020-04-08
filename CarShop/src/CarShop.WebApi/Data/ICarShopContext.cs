@@ -7,5 +7,6 @@ namespace CarShop.WebApi.Data
   public interface ICarShopContext : IAuditableDbContext
   {
     DbSet<UserProfile> UserProfiles { get; set; }
-  }
+        DbSet<SellCar> SellCars { get; set; }
+    }
 }
