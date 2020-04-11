@@ -8,7 +8,7 @@ import { endPoints } from 'src/environments/endPoints';
 export class SellService {
 
   constructor(private http: HttpClient) { }
-
-  postCar() {
+  getBeer() {
+    return this.http.get('https://api.openbrewerydb.org/breweries');
   }
 }

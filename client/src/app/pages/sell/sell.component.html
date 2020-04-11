@@ -13,4 +13,15 @@
     </li>
   </ul>
   <div *ngIf="todos.length < 1">This list is empty</div>
+
+
+  <div>
+    <ul>
+      <li *ngFor="let brew of brews">
+        {{brew.name}}
+        {{brew.street}}
+        {{brew.city}}
+      </li>
+    </ul>
+  </div>
 </div>

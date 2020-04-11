@@ -1,5 +1,6 @@
 import { FormControl, FormGroup } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
+import { SellService } from 'src/app/services/sell.service';
 
 @Component({
   selector: 'app-sell',
@@ -9,7 +10,8 @@ import { Component, OnInit } from '@angular/core';
 export class SellComponent implements OnInit {
   public todos = [];
   todoForm: FormGroup;
-  constructor() {
+  brews: object;
+  constructor(private brewer: SellService) {
     this.todoForm = new FormGroup({
       add: new FormControl('')
     }
@@ -17,7 +19,10 @@ export class SellComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    this.brewer.getBeer().subscribe(data => {
+      this.brews = data;
+      console.log(this.brews);
+    });
   }
   addItems() {
     this.todos.push(this.todoForm.value);
