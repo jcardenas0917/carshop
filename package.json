@@ -29,7 +29,7 @@
   "homepage": "https://github.com/jcardenas0917/mynextroll#readme",
   "dependencies": {
     "axios": "^0.19.0",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
     "express": "^4.17.1",
